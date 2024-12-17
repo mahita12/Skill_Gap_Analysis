@@ -6,8 +6,8 @@ from azure.core.credentials import AzureKeyCredential
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-AZURE_KEY = "4xp4YWc76c0lkREJ0fmAMlV8Y6vVOTxAdoruEVGhzRylzRzu6W9VJQQJ99ALAC1i4TkXJ3w3AAAEACOGP3ow"  
-AZURE_ENDPOINT = "https://skillgapanalysis.cognitiveservices.azure.com/"  
+AZURE_KEY = "xxxxxx"  
+AZURE_ENDPOINT = "xxxxxxx"  
 
 def get_azure_client():
     return TextAnalyticsClient(endpoint=AZURE_ENDPOINT, credential=AzureKeyCredential(AZURE_KEY))
